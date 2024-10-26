@@ -2,7 +2,6 @@
 hello.py
 docs/notes/*
 
-
 # Python-generated files
 __pycache__/
 *.py[oc]
