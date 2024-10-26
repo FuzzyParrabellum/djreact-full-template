@@ -154,6 +154,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# ADDED - TO MODIFY
+# ADDED for django_rest - TO MODIFY
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
+
+# ADDED personnalized user model
+AUTH_USER_MODEL = 'users.User'
