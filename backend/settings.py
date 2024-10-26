@@ -51,6 +51,7 @@ SIMPLE_JWT = {
 # Application definition
 PROJECT_APPS = [
     "core.api",
+    "core.users",
 ]
 
 THIRD_PARTY_APPS = [
