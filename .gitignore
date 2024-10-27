@@ -1,6 +1,7 @@
 # perso
 hello.py
 docs/notes/*
+db.sqlite3
 
 # Python-generated files
 __pycache__/
