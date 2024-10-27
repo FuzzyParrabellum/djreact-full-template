@@ -17,5 +17,5 @@ urlpatterns = [
     # rest_framework views
     path('api-auth/', include("rest_framework.urls")),
     # api app
-    path('api/', include("api.urls")),
+    path('api/', include("core.api.urls")),
 ]
