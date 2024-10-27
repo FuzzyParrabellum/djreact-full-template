@@ -2,6 +2,8 @@
 hello.py
 docs/notes/*
 db.sqlite3
+*/.env
+.env
 
 # Python-generated files
 __pycache__/
