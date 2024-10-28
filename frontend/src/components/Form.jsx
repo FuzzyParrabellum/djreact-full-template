@@ -6,7 +6,7 @@ import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import "../styles/form.css";
 
 function Form({ route, method }) {
-  const [mail, setUserMail] = useState("");
+  const [email, setUserMail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ function Form({ route, method }) {
     e.preventDefault();
 
     try {
-      const res = await api.post(route, { mail, password });
+      const res = await api.post(route, { email, password });
       if (method === "login") {
         localStorage.setItem(ACCESS_TOKEN, res.data.access);
         localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
@@ -40,13 +40,13 @@ function Form({ route, method }) {
       <input
         className="form-input"
         type="text"
-        value={mail}
+        value={email}
         onChange={(e) => setUserMail(e.target.value)}
         placeholder="Mail"
       />
       <input
         className="form-input"
-        type="text"
+        type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
