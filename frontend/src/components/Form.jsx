@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import api from "../api";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
+import "../styles/form.css";
 
 function Form({ route, method }) {
   const [mail, setUserMail] = useState("");
@@ -10,7 +11,7 @@ function Form({ route, method }) {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const formName = method === "login" ? "login" : "Register";
+  const formName = method === "login" ? "Login" : "Register";
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -56,3 +57,5 @@ function Form({ route, method }) {
     </form>
   );
 }
+
+export default Form;
